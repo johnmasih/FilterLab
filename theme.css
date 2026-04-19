@@ -1,0 +1,42 @@
+:root{
+
+    --bg-primary-color : #0f1115;
+    --bg-secondary-color: #1a1d24;
+    --bg-active-color: #ffffff;
+
+    --bg-danger-color : rgb(190, 33, 33);
+    --bg-success-color : rgb(25, 124, 25);
+
+    --text-primary-color: #ffffff;
+    --text-secondary-color: #b5b8c5;
+    --text-tertiary-color: #7a7f8a;
+    --text-active-color: #111;
+
+    --padding-sm : 0.5rem;
+    --padding-md : 1rem;
+    --padding-lg : 1.5rem;
+    --padding-xl : 2rem;
+    --padding-2xl : 3rem;
+
+    --margin-sm : 0.5rem;
+    --margin-md : 1rem;
+    --margin-lg : 1.5rem;
+    --margin-xl : 2rem;
+    --margin-2xl : 3rem;
+
+    --gutter-sm : 0.5rem;
+    --gutter-md : 1rem;
+    --gutter-lg : 1.5rem;
+    --gutter-xl : 2rem;
+    --gutter-2xl : 3rem;
+
+    --font-size-sm : 0.875rem;
+    --font-size-md : 1rem;
+    --font-size-lg : 1.125rem;
+    --font-size-xl : 1.25rem;
+    --font-size-2xl : 1.5rem;
+
+
+    --border-radius-md : 0.4rem;
+    --border-radius-xl : 0.8rem;
+}

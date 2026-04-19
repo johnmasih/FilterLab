@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+
+section{
+    width: 100%;
+    padding: var(--padding-2xl);
+    display: flex;
+    gap: var(--gutter-lg);
+    height: 100vh;
+    align-items: stretch;
+}
+
+
+main section .left{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-lg);
+    width: 70%;
+    align-items: center;
+    height: 100%;
+}
+
+
+main section .top{
+    display: flex;
+    align-items: center;
+    gap: var(--gutter-md);
+}
+
+
+.btn{
+    padding: var(--padding-sm);
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-md);
+    background-color: var(--bg-active-color);
+    cursor: pointer;
+    color: var(--text-active-color);
+    transition: 0.2s ease;
+}
+
+.btn:hover{
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+#reset-btn{
+    background-color: var(--bg-danger-color);
+    color: var(--text-primary-color);
+    padding: 0.73rem;
+}
+
+#download-btn{
+    background-color: var(--bg-success-color);
+    color: var(--text-primary-color);
+    padding: 0.73rem;
+}
+
+
+main section .bottom{
+    background-color: var(--bg-secondary-color);
+    width: 100%;
+    padding: var(--padding-2xl);
+    border-radius: var(--border-radius-xl);
+
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+
+main section .bottom .placeholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+}
+
+main section .bottom .placeholder i{
+    font-size: 8rem;
+}
+
+main section .bottom .placeholder p{
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary-color);
+}
+
+
+main section .right{
+    width: 30%;
+    background-color: var(--bg-secondary-color);
+    padding: var(--padding-lg);
+    border-radius: var(--border-radius-xl);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+
+    overflow-y: auto;
+    min-height: 0;
+
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+
+main section .right .filters{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+}
+
+main section .right .filter{
+    width: 100%;
+}
+
+main section .right .filter input{
+    width: 100%;
+    outline: none;
+    margin-top: var(--margin-sm);
+    appearance: none;
+    background: transparent;
+}
+
+main section .right .filter input::-webkit-slider-thumb{
+    appearance: none;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: -6px;
+}
+
+main section .right .filter input::-webkit-slider-runnable-track{
+    height: 3px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+canvas{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+    display: none;
+}
+
+.presets{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter-md);
+}
+
+
+@media (max-width: 900px){
+    section{
+        flex-direction: column;
+        height: auto;
+    }
+
+    main section .left{
+        width: 100%;
+        height: auto;
+    }
+
+    main section .right{
+        width: 100%;
+        max-height: 300px;
+    }
+
+    main section .bottom{
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 500px){
+    main section .top{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+}
