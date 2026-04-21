@@ -1,4 +1,4 @@
-# 📸 FilterLab (Image Editing Web App)
+# 📸 [FilterLab (Image Editing Web App)](https://johnmasih.github.io/FilterLab/)
 
 A simple and interactive web-based image editor built using **HTML, CSS, and JavaScript**. This application allows users to upload images and apply various filters and adjustments in real-time using the **HTML5 Canvas API**.
 
